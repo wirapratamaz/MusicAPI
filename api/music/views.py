@@ -4,7 +4,7 @@ from .models import Songs
 from .serializers import SongSerializer
 
 # Create your views here.
-class ListSongView(generics.ListAPIView):
+class ListSongsView(generics.ListAPIView):
     #Provides a get method handler.
     queryset = Songs.objects.all()
     serializer_class = SongSerializer
